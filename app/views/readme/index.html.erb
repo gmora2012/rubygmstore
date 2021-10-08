@@ -1,0 +1,117 @@
+<h1>Readme File<h1>
+<hr>
+<div>
+<p class="lead">This has been a nice small project for me to begin learning Ruby on Rails.</p>
+<p class="lead">It's my first time configuring rails and creating an MVC project.</p>
+<p class="lead">I use a Macbook Pro 13 M1, so I had to do a lot of digging to correctly install ruby on rails.</p>
+<p class="lead">I spent quite some time troubleshooting various environment issues, I feel I did a great effort 
+considering it was my first time doing hands on work on a rails project and also using a postgresql db.</p>
+
+<p class="lead">Below are all of the information regarding this project, about what I was able to complete
+and what I couldn't. I feel I made great progress this last 8 days.</p>
+
+<p class="lead"><b>RubyGM Store Project</b></p>
+
+<p class="lead"><b># Features completed:</b></p>
+<ul class="list-unstyled lead">
+<li>- Implementation of postgresql database,</li>
+<li>- Created MVC project and integrated Bootstrap as the main theme, made sure it was responsive as well.</li>
+<li>- Created Tables for: Store, Products, Category</li>
+<li>- Creating relationships and added foreign keys between Products and Stores tables</li>
+<li>- Created tab "page" for each individual view (Store, Category, Products) with their corresponding data tables and CRUD actions.</li>
+<li>- Created a readme page that contains all of this information, so it can be viewed in the browser.</li>
+<li>- Added the necesary controller logic for all of the CRUD functionalities, opted to not use the "resources:" internal method 
+(which basicaly does the same CRUD actions. according to my research)</li>
+<br/>
+    <p class="lead"><b>1. For Products Tab:</b></p>
+    <ul class="list-unstyled lead">
+        <li>- Search based on name</li>
+        <li>- Filter based on category and store</li>
+        <li>- Data table with CRUD actions.</li>
+    </ul>
+<br/>
+    <p class="lead"><b>2. For Categories:</b></p>
+    <ul class="list-unstyled lead">
+        <li>- Data table</li>
+        <li>- Modal for editing any of the records without leaving the page</li>
+        <li>- Added all CRUD actions for the Category model</li>
+    </ul>
+<br/>
+    <p class="lead"><b>3. For Stores:</b></p>
+    <ul class="list-unstyled lead">
+        <li>- Data Table</li>
+        <li>- Modal for editing any of the records without leaving the page</li>
+        <li>- Added all CRUD actions for the Category model</li>
+    </ul>
+<br/>
+</ul>
+
+<p class="lead"><b># Features not completed:</b></p>
+<ul class="list-unstyled lead">
+ <li>- Could not complete the search by keywords</li>
+ <li>- Extra validations actions for update, create the form records.</li>
+ <li>- Overall more Bootstrap implementation</li>
+ <li>- Could not establish the "A Category can have many Keywords, but a Keyword can only be part of one
+Category" relationship using a model.</li>
+</ul>
+<br/>
+<p class="lead"><b># Overall Application Description:</b></p>
+
+<p class="lead"><b># Ruby version</b></p>
+<p class="lead">I'm using Ruby 2.7.2p137</p>
+
+<p class="lead"><b># System dependencies</b></p>
+<p class="lead">I'm using the following dependencies:</p>
+  <ul class="list-unstyled lead">
+    <li>bootsnap (>= 1.4.4)</li>
+    <li>byebug</li>
+    <li>capybara (>= 3.26)</li>
+    <li>font-awesome-rails</li>
+    <li>jbuilder (~> 2.7)</li>
+    <li>listen (~> 3.3)</li>
+    <li>pg (~> 1.1)</li>
+    <li>puma (~> 5.0)</li>
+    <li>rack-mini-profiler (~> 2.0)</li>
+    <li>rails (~> 6.1.4, >= 6.1.4.1)</li>
+    <li>sass-rails (>= 6)</li>
+    <li>selenium-webdriver</li>
+    <li>spring</li>
+    <li>turbolinks (~> 5.2.0)</li>
+    <li>tzinfo-data</li>
+    <li>view_component</li>
+    <li>web-console (>= 4.1.0)</li>
+    <li>webdrivers</li>
+    <li>webpacker (~> 5.0)</li>
+  </ul>
+
+<p class="lead"><b># Configuration</b></p>
+<p class="lead">I created a simple Bootstrap MVC web application that brings information 
+on three main tabs: Products, Stores, Categories. The data is all related
+to each other and inside each page, they all have particular functionalities</p>
+
+<p class="lead"><b># Database creation</b></p>
+<p class="lead">I used a Postgresql db, that has three main tables: stores, products, categories.</p>
+
+<p class="lead"><b>Here are the relationships between them:</b></p>
+<ul class="list-unstyled lead">
+    <li>- Products belongs to both: Stores and Categories</li>
+    <li>- Categories has many products</li>
+    <li>- Stores has many products</li>
+</ul>
+
+<p class="lead"><b># Deployment instructions</b></p>
+<p class="lead">1. Download source code from git repo</p>
+<p class="lead">2. Compile the project and install dependencies (bundle install)</p>
+<p class="lead">3. Create the DB (rails db:create)</p>
+<p class="lead">4. Generate dummy content -> You can find the querys to run inside of the 
+   project directory in the terminal (using command: rails c), by going to this path
+   root -> db -> dummy -> start.sql (query's file).
+   Run them in the specified order</p>
+<p class="lead">5. You are now in the admin view</p>
+<p class="lead">6. From these point, you can create, edit and delete any of the products, stores or categories.</p>
+<p class="lead">*Please take in mind that the validation options 
+for foreign key records (that point to different table id's can't just be deleted)</p>
+
+<p class="lead bold"><b>Created by Gabriel Mora</b></p>
+
+</div>

@@ -1,0 +1,46 @@
+<h1>Create a new product</h1>
+<br />
+<%= form_for @product do |f| %>
+  <div class="form-group row">
+    <%= f.label :Name, class: "col-sm-1 col-form-label-lg" %>
+    <div class="col-sm-4">
+      <%= f.text_field :name, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group row">
+    <%= f.label :Color, class: "col-sm-1 col-form-label-lg" %>
+    <div class="col-sm-4">
+      <%= f.text_field :color, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group row">
+    <%= f.label :Category, class: "col-sm-1 col-form-label-lg" %>
+    <div class="col-sm-4">
+      <%= f.collection_select( :category_id, Category.all, :id, :name, { include_blank: false }, { class: "form-control dropdown-toggle" } ) %>  
+    </div>
+  </div>
+  <div class="form-group row">
+    <%= f.label :"Size(Kg)", class: "col-sm-1 col-form-label-lg" %>
+    <div class="col-sm-4">
+      <%= f.number_field :size, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group row">
+    <%= f.label :"Price($)", class: "col-sm-1 col-form-label-lg" %>
+    <div class="col-sm-4">
+      <%= f.number_field :price, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group row">
+    <%= f.label :Store, class: "col-sm-1 col-form-label-lg" %>
+    <div class="col-sm-4">
+      <%= f.collection_select( :store_id, Store.all, :id, :name, { include_blank: false }, { class: "form-control dropdown-toggle" } ) %>
+    </div>
+  </div>
+    <br />
+  <div class="form-group row">
+    <div class="col-sm-4">
+      <%= f.submit nil, class: "btn btn-primary" %>
+    </div>
+  </div>
+<% end %>

@@ -1,0 +1,28 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: apple
+  color: red
+  category: fruits
+  size: small box
+  price: 1
+  stores: Quito Store
+  store: one
+
+two:
+  name: banana
+  color: yellow
+  category: fruits
+  size: small box
+  price: 2
+  stores: Gye Store
+  store: two
+
+three:
+  name: beans
+  color: brown
+  category: vegetables
+  size: small box
+  price: 3
+  stores: Gye Store
+  store: two

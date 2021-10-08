@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Gye Store
+  street: Boyaca y Aguirre
+  number: 1
+  zipcode: 121
+  city: Guayaquil
+  country: Ecuador
+  products: MyString
+
+two:
+  name: Quito Store
+  street: Los Shiris
+  number: 2
+  zipcode: 122
+  city: Quito
+  country: Ecuador
+  products: MyString
